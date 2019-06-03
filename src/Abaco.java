@@ -35,8 +35,8 @@ public class Abaco {
         capabilities.setCapability("fullReset", "true");
         capabilities.setCapability("useNewWDA","false");
         driver =new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-        driver.findElementByName("Username").sendKeys("Dev@abstractmediaco.com");
-        driver.findElementByName("Password").sendKeys("abstractdev");
+        driver.findElementByName("Username").sendKeys("username");
+        driver.findElementByName("Password").sendKeys("password");
         WebElement signin=driver.findElementByXPath("(//XCUIElementTypeOther[@name='SIGN IN'])[2]");
         signin.click();
         Thread.sleep(5000);
